@@ -129,4 +129,6 @@ if generate_button:
             mime="image/png",
         )
 
-        st.text('Made with ❤️ with 🐍 | Gaël Penessot | data-decision.io')
+        st.markdown("<hr>")
+        st.markdown("Made with 💘 & 🐍 | [Gaël Penessot](https://www.linkedin.com/in/gael-penessot/) | [data-decision.io](https://data-decision.io/)")
+        
