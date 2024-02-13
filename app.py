@@ -15,7 +15,7 @@ warnings.filterwarnings("ignore")
 
 API_KEY = st.secrets["token"]
 URL = "https://api-adresse.data.gouv.fr/search/?q="
-TILE_URL = f"https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}{r}.png?api_key={API_KEY}"
+TILE_URL = "https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}{r}.png?api_key=" + str(API_KEY)
 ICON_PATH = "assets/heart.png"
 
 # Paramètres poster
