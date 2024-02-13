@@ -13,10 +13,9 @@ from PIL import Image, ImageDraw, ImageFont
 # Temporarily suppress all warnings
 warnings.filterwarnings("ignore")
 
-# API_KEY = st.secrets["token"]
+API_KEY = st.secrets["token"]
 URL = "https://api-adresse.data.gouv.fr/search/?q="
-#TILE_URL = f"https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}{r}.png?api_key={token}"
-TILE_URL = "https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}{r}.png?api_key=6884cb5b-7554-4dc6-975e-caf6301e7554"
+TILE_URL = f"https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}{r}.png?api_key={API_KEY}"
 ICON_PATH = "assets/heart.png"
 
 # Paramètres poster
