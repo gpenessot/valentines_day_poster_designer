@@ -111,24 +111,27 @@ if generate_button:
             font=FONT_2,
             align="center",
         )
+        col1, col2 = st.columns(2)
 
-        st.image(nouvelle_image, width=500)
+        with col1:
+            st.image(nouvelle_image, width=500)
 
-        image_bytes_io = io.BytesIO()
-        nouvelle_image.save(
-            image_bytes_io, format="PNG"
-        )  # You can change the format as needed
-        image_bytes = image_bytes_io.getvalue()
-        buffered_reader = io.BytesIO(image_bytes)
+        with col2:
+            image_bytes_io = io.BytesIO()
+            nouvelle_image.save(
+                image_bytes_io, format="PNG"
+            )  # You can change the format as needed
+            image_bytes = image_bytes_io.getvalue()
+            buffered_reader = io.BytesIO(image_bytes)
 
-        # Export button
-        export_button = st.download_button(
-            label="Télécharger image",
-            data=buffered_reader,
-            file_name="poster.png",
-            mime="image/png",
-        )
+            # Export button
+            export_button = st.download_button(
+                label="Télécharger image",
+                data=buffered_reader,
+                file_name="poster.png",
+                mime="image/png",
+            )
 
-        st.markdown("<hr>")
+        st.markdown("---")
         st.markdown("Made with 💘 & 🐍 | [Gaël Penessot](https://www.linkedin.com/in/gael-penessot/) | [data-decision.io](https://data-decision.io/)")
         
