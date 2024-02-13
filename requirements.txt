@@ -1,0 +1,8 @@
+cv2
+folium
+numpy
+pandas
+requests
+streamlit
+selenium
+Pillow
