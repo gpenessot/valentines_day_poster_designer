@@ -115,7 +115,7 @@ if generate_button:
 
         with col1:
             st.image(nouvelle_image, 
-                     #width=500, 
+                     width=500, 
                      caption='Image générée', 
                      use_column_width=True)
 
