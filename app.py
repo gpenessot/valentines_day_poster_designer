@@ -128,3 +128,5 @@ if generate_button:
             file_name="poster.png",
             mime="image/png",
         )
+
+        st.text('Made with ❤️ with 🐍 | Gaël Penessot | data-decision.io')
