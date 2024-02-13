@@ -111,7 +111,7 @@ if generate_button:
             font=FONT_2,
             align="center",
         )
-        col1, col2 = st.columns(2)
+        col1, col2 = st.columns([2, 1])
 
         with col1:
             st.image(nouvelle_image, 
